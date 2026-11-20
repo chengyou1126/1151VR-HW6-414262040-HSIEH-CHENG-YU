@@ -4,7 +4,7 @@
 <img width="937" height="445" alt="image" src="https://github.com/user-attachments/assets/c529c9e9-90cd-421c-b64d-c6d5ab06e0ad" />
 
 ## 2. Github連結
-
+https://github.com/chengyou1126/1151VR-HW6-414262040-HSIEH-CHENG-YU/blob/main/README.md
 
 ## 3. Youtube連結
 https://youtu.be/dcN3M5_eDJw
