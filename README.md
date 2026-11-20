@@ -3,8 +3,10 @@
 ## 1. 專案截圖
 <img width="937" height="445" alt="image" src="https://github.com/user-attachments/assets/c529c9e9-90cd-421c-b64d-c6d5ab06e0ad" />
 
+
 ## 2. Github連結
 https://github.com/chengyou1126/1151VR-HW6-414262040-HSIEH-CHENG-YU/blob/main/README.md
+
 
 ## 3. Youtube連結
 https://youtu.be/dcN3M5_eDJw
@@ -15,10 +17,10 @@ https://youtu.be/dcN3M5_eDJw
 ### 製作流程
 1. **場景建置**：建立 3D 專案，匯入 `stage`、`basket`、`apple`、`bomb` 模型與音效，設定 `3x3` 九宮格舞台的 Box Collider、俯瞰攝影機視角與正上方 Directional Light 陰影。
 2. **物件控制與物理判定**：
-   * `BasketController.cs`：透過滑鼠點擊發射射線（Raycast），將籐籃吸附並限制於九宮格中心（`-1, 0, 1`）；搭配 `Is Kinematic` Rigidbody 與 `Is Trigger` Box Collider 偵測物品，依 `Apple` / `Bomb` Tag 播放對應音效並通知導演計分。
-   * `ItemController.cs`：控制蘋果與炸彈向下掉落，超出畫面底部（`y < -1.0f`）自動銷毀。
-3. **Prefab 與產生器**：將設定好 Tag、Collider 與腳本的蘋果和炸彈做成 Prefab，由 `ItemGenerator.cs` 依外部參數定時在隨機格點生成。
-4. **UI 與導演系統**：使用 TextMeshPro 建立右上角倒數時間（`Time`）與分數（`Point`），由 `GameDirector.cs` 管理 150 秒倒數、計分（接蘋果 +100、接炸彈分數減半）、動態難度切換及時間結束停止生成。
+   * `BasketController`：透過滑鼠點擊發射射線（Raycast），將籐籃吸附並限制於九宮格中心（`-1, 0, 1`）；搭配 `Is Kinematic` Rigidbody 與 `Is Trigger` Box Collider 偵測物品，依 `Apple` / `Bomb` Tag 播放對應音效並通知導演計分。
+   * `ItemController`：控制蘋果與炸彈向下掉落，超出畫面底部（`y < -1.0f`）自動銷毀。
+3. **Prefab 與產生器**：將設定好 Tag、Collider 與腳本的蘋果和炸彈做成 Prefab，由 `ItemGenerator` 依外部參數定時在隨機格點生成。
+4. **UI 與導演系統**：使用 TextMeshPro 建立右上角倒數時間（`Time`）與分數（`Point`），由 `GameDirector` 管理 150 秒倒數、計分（接蘋果 +100、接炸彈分數減半）、動態難度切換及時間結束停止生成。
 
 
 ### 操作說明
